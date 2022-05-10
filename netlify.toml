@@ -1,4 +1,4 @@
 [build.environment]
   YARN_VERSION = "1.22.18"
-  NODE_ENV = "production"
+  NODE_ENV = "development"
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
