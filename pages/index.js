@@ -8,7 +8,7 @@ export default function Home() {
         <meta name="description" content="my landing page" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
       </Head>
 
@@ -38,7 +38,7 @@ export default function Home() {
             <iframe className="absolute t-0 l-0 w-[100%] h-[100%]" src="https://www.youtube.com/embed/wqJsZYibWcI" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
 
-          <div class="gallery-item">
+          {/* <div class="gallery-item">
             <img src="2.jpg" class="gallery-image" alt="" />
             <div class="gallery-item-type">
               <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
@@ -49,14 +49,14 @@ export default function Home() {
                 <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <div className="relative pb-[56.25%] h-0">
             <iframe className="absolute t-0 l-0 w-[100%] h-[100%]" src="https://www.youtube.com/embed/cBVGlBWQzuc" frameBorder="0" allow="encrypted-media" allowFullScreen />
           </div>
 
           <div className="flex items-center justify-center bg-indigo-500">
-            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
