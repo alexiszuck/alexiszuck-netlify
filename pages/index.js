@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -10,16 +11,18 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+      </Head>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8VF0N803W"></script>
-        <script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-D8VF0N803W" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
           gtag('config', 'G-D8VF0N803W');
-        </script>
-      </Head>
+          `}
+      </Script>
 
       <header className="container mx-auto pt-4">
         <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-16">
